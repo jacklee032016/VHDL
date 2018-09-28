@@ -6,9 +6,9 @@ Installation/Upgrading driver of Cable USB II
 
 Drivers:
 
-*. Jungo: WinDriver;
+#. Jungo: WinDriver;
 
-*. Xilinx: Xilinx Programming Cable, USB Cable
+#. Xilinx: Xilinx Programming Cable, USB Cable
 
 Steps:
 
@@ -22,7 +22,7 @@ hardware Manager in Vivado
 * `localhost/xilinx_tcf/xilinx/XXXXXX`:
    * 'xc7a75t_0':
       * `XADC(System Monitor)`;
-	  * 'mt25ql256-spi-x1_x2_x4';
+      * 'mt25ql256-spi-x1_x2_x4';
 
 **Notes**:
 
