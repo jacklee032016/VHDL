@@ -8,6 +8,8 @@ May,1st, Tuesday
 										
 Constrains and configuration
 ===================================
+::
+
 	set_property BITSTREAM.CONFIG.CONFIGFALLBACK ENABLE [current_design]
 	
 	set_property BITSTREAM.CONFIG.NEXT_CONFIG_ADDR 0x0400000 [current_design]
@@ -36,9 +38,10 @@ Test and Validation:
    * SDI/POWER	: ON
    * ACT/Link	: 0.5Hz
 			
-			address 4M and 6M
 
-	If erasing 4M sector, golden image will be displayed after a short delay; and ledTimeCtrl in address of 6M is not used;
+Address 4M and 6M
+==================
+* If erasing 4M sector, golden image will be displayed after a short delay; and ledTimeCtrl in address of 6M is not used;
 	
-	If ledTimeCtrl is there, blink quickly after poweron or reconfigure FPGA;
+* If ledTimeCtrl is there, blink quickly after poweron or reconfigure FPGA;
 
