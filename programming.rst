@@ -10,9 +10,13 @@ Drivers:
 
 *. Xilinx: Xilinx Programming Cable, USB Cable
 
+*. Default driver is not working, must add driver with xilinx tools;
+
 Steps:
 
-* Delete Driver and Reinstall with `Add Design Tools or Device 2017.4`: select
+* Delete Driver and Reinstall with `Add Design Tools or Device 2017.4`: select;
+
+* When everything is OK, the green light is on, otherwise it is yellow light;
 
 
 Device 

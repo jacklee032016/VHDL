@@ -21,6 +21,13 @@ Building
    text	   data	    bss	    dec	    hex	filename
    2748	    268	   3112	   6128	   17f0	hello.elf
 
+Compile options:
+
+ -fmessage-length=0 -MT"src/helloworld.o" 
+ -I../../hello_bsp/microblaze_0/include 
+ -mlittle-endian -mcpu=v10.0 -mxl-soft-mul 
+ -Wl,--no-relax -ffunction-sections -fdata-sections 
+ -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 
 Programming and Running   
 ==============================
@@ -49,5 +56,30 @@ Programming
  Writing bitstream D:/vivado/projects/mbHello/mbHello.sdk/mb767_board_hw_platform_0/download.bit...
    update_mem: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 488.602 ; gain = 434.531
  INFO: [Common 17-206] Exiting updatemem at Fri Sep 28 16:30:56 2018...
+
+
+SDK Program flash with boot iamge
+===================================
+Create Image
+-------------------
+Bit file of FPGA + ELF of software
+
+
+Create Binary
+---------------
+::
+
+ cmd /C bootgen -arch fpga -image \
+ D:/vivados/projects/mbHello/mbHello.sdk/mb767_board_hw_platform_0/cache/bootimage.bif -w \
+ -o D:/vivados/projects/mbHello/mbHello.sdk/mb767_board_hw_platform_0/cache/BOOT.bin  \
+ -interface spi 
+
+Programming with bindary
+----------------------------
+::
+
+ cmd /C program_flash -f \
+ D:/vivados/projects/mbHello/mbHello.sdk/mb767_board_hw_platform_0/cache/BOOT.bin -offset 0 \
+ -flash_type mt25ql256-spi-x1_x2_x4 -cable type xilinx_tcf url TCP:127.0.0.1:3121 
 
  
