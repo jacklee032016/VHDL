@@ -17,8 +17,10 @@ Input
 ^^^^^^^
 * AXI_LITE --> AXI InterConnect (from mb0);
 * ext_spi_clk|s_axi_aclk  --> clk_out1 (Clock Wizard);
+
   * clk_out1 also connect AXI InterConnect and other peripheral devices;
 * s_aresetn --> Processor System Reset( and many other devices);
+
   * These devices connect to same clk and reset are in same time domain;
 
 Output
@@ -42,6 +44,7 @@ Configuration
 ---------------
 * Enable JTAG UART;
 * JTAG User Register: USER2;
+
   * When debugging: TCP Debug Virtual Terminal: MicroBlaze Debug Module at USER2
 
 Interfaces
@@ -50,6 +53,7 @@ Input
 ^^^^^^^
 * S_AXI --> AXI InterConnect;
 * clk/aresetn: as QSPI;
+
   * When JTAG UART is enabled;
 
 Output
@@ -58,6 +62,7 @@ Output
 * MB_DEBUG0 --> DEBUG, to out binary into MB CPU;
 
 **Notes**:
+
 * When Output pins are not connected, SDK can ``run`` program, but no message return;
 
 
@@ -66,6 +71,7 @@ First MicroBlaze in Video Board
 10.05, 2018
 * MicroBlaze  
    * Linux with MMU
+   
       * MMU Memory Management: Virtual (None/UserMode/Protection)
    * 32K ILMB and DLMB BRAM;
    
