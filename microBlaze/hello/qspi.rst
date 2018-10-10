@@ -3,6 +3,15 @@ QSPI Flash on AN767 Board
 10.09, 2018
 
 
+XIP
+============
+
+
+SDK Programming
+=================
+Flash Type:mt25ql256-spi-x1_x2_x4
+
+
 SPI Flash 
 ============
 * DataInout: 4 pins;
