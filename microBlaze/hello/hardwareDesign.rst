@@ -19,6 +19,7 @@ Inputs
 * int[r]: 
 
 When ``Enable Fast Interrupt Logic``:
+
 * processor_clk:
 * processor_rst: 
 
