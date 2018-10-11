@@ -2,6 +2,15 @@ Hardware Design for AN767 Board
 ###################################
 
 
+Test Results
+==============
+* Text section can't be placed in SDRAM;
+* SREC bootloader can't read anything;
+   * xilisf library can't be built when serial flash family set as 3 or 4;
+* Intr Controller selfTest failed;
+* Timer selfTest failed;
+
+
 Interrupt Controller
 ======================
 10.10, 2018
