@@ -2,6 +2,10 @@ MicroBlaze Projects for Video Board
 ####################################
 10.05, 2018
 
+Flash part:
+	s25fl256xxxxxx0
+
+
 XMD
 ---------
 Can be used in XSCT console:
