@@ -2,6 +2,25 @@ About Demo of Nexys Video Board
 ####################################
 10.12, 2018
 
+
+Debugging Etherent of Demo and bist
+====================================
+
+Bist
+---------
+* Standalone, main loop is controlled by input (all input is not echoed);
+* only one test can be executed once a time because polling and replying one type of test in main loop;
+* Only ``eth-start`` is inputted, ethernet is enabled, packet are sent back in main loop;
+
+
+Demo
+----------
+* Main loop poll and reply all types of events;
+* IP also shown in LED;
+
+**ping always works, because ARP is enabled defaultly**;
+
+
 Flash part:
 	* s25fl256xxxxxx0, eg. s25fl256sxxxxxx0-spi-x1_x2_x4
 

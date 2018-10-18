@@ -1,6 +1,11 @@
 Hardware Design
 ######################
 
+Ethernet and DMA Support
+=========================
+* Add Interrupts for AXI_ETHERNET and AXI_DMA IP cores: connect all interrupt pins;
+* Rebuilt bitstream and software;
+
 
 AXI Quad SPI IP
 =================
