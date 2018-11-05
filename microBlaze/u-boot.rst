@@ -35,8 +35,18 @@ Configuration
 	board/xilinx/microblaze-generic/xparameters.h
 	board/xilinx/microblaze-generic/config.mk
 
+use default file:
+
+::
+
 	include/configs/microblaze-generic.h
+	
+	
 	arch/microblaze/dts/microblaze-generic.dts
+
+
+	Convert the .dtb file into .dts file in petalinux project
+	dtc -I dtb -O dts -o <plnx-proj-root>/components/plnx_workspace/device-tree/device-tree-generation/plnx_microblaze-system.dts
 
 	Replace the dts file of u-boot-xlnx via petalinux project. Convert the .dtb file into .dts file in petalinux project
 
@@ -46,6 +56,8 @@ Configuration
     
     <plnx-proj-root>/components/plnx_workspace/device-tree/device-tree-generation/microblaze-generic.dts
     cp <plnx-proj-root>/components/plnx_workspace/device-tree/device-tree-generation/microblaze-generic.dts u-boot-xlnx/arch/microblaze/dts
+
+icroblaze-generic.dts u-boot-xlnx/arch/microblaze/dts
 
 
 Make
