@@ -4,12 +4,17 @@ U-Boot for MicroBlaze
 
 
 The devices that have been tested include UART lite, UART 16550, Linear flash, EMAC lite, LL TEMAC with PLB DMA, and AXI EMAC with AXI DMA. The timer counter and interrupt controller were also tested.
+
 Tests were done on Spartan 605 (PLB and AXI) and Kintex 705 (AXI) evaluation platforms using XPS 14.2 and 14.3.
 
 flash : NOR flash
+
 spi : 	spi/qspi flashes
+
 i2c : 	i2c controller
+
 ethernet lite : 	EMAC lite
+
 ethernet : AXI EMAC with AXI DMA
 
 
