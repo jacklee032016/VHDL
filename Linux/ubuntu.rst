@@ -2,6 +2,15 @@ ubuntu Usage
 ####################################
 Oct.20, 2018
 
+Add packages
+-----------------------
+Nov. 2018
+
+vi 
+sudo apt-get install device-tree-compiler
+
+sudo apt-get install device-tree-compiler
+
 
 PetaLinux
 ===================
