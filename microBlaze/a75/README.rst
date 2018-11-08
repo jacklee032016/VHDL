@@ -19,3 +19,6 @@ GNU toolchains:
 * Preprocess:  __MICROBLAZE__
 
 -mcpu=v10.0
+
+
+mt25ql256-spi-x1_x2_x4
