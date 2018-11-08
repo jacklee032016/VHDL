@@ -1,6 +1,42 @@
 Hardware Design for AN767 Board
 ###################################
 
+Only Receive boardcast packets, can't send to rtl8305H
+========================================================
+
+Switch chip
+---------------
+* Port 4: RJ45, 100M;
+* Port 5: FPGA, RGMII interface, 1000M; only in this mode; 125MHz TX clock;
+* Port 6: MCU, MII, 100M;
+
+Controlled by MicroBlaze
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Failed: Speed, and configuration command;
+* I2C Clock 100KHz; 400KHz (same as SAME70 MCU);
+* with or without MII_COL and MII_CRS pins connectted to 0;
+
+
+IP Cores
+--------------
+SGDMA, Scatter, Gather DMA,
+
+IRQs:
+
+* 4: ethernet subsystem; 
+   * Pending IRQ, RxReject: recevied packets are rejected (dest for other NIC??);
+   * Check TX packets statistics, works fine;
+* 5: DMA RX, S2MM (Slave to Master Memory);
+* 6: DMA TX, MM2S (Master Memory to Slave);
+   * BD : Buffer Descriptor;
+   * TxBDRing, RxBDRing;
+* 7: MAC IRQ (TEMAC IRQ), related with MDIO interface; Not used;
+
+ETH_CLK, 25MHz, is not used in AN767 design;
+
+RGMII interface 1.3 and 2.0, support 2.0, 1.8V/2.5v;
+
+
 AXI ETHERNET Design
 =============================
 10.19, 2018

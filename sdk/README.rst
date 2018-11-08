@@ -52,7 +52,7 @@ Simulation with QEMU
 
 ::
 
-  /opt/uBoot/u-boot-xlnx$ qemu-system-microblazeel -M microblaze-fdt-plnx -m 256 -serial mon:stdio -display none -hw-dtb ../system-top.dtb -kernel /media/sf_vivados/v/xsct/sdkVideo/workspace/hello/Debug/hello.elf
+  qemu-system-microblazeel -M microblaze-fdt-plnx -m 256 -serial mon:stdio -display none -hw-dtb ../system-top.dtb -kernel /media/sf_vivados/v/xsct/sdkVideo/workspace/hello/Debug/hello.elf
 
 microblaze-fdt       Microblaze device tree driven machine model
 microblaze-fdt-plnx  Microblaze device tree driven machine model for PetaLinux

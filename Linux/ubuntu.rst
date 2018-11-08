@@ -6,10 +6,14 @@ Add packages
 -----------------------
 Nov. 2018
 
-vi 
-sudo apt-get install device-tree-compiler
+=======
+Install `vim`
+--------------
+Resolve the problem of 4 arrow keye in edit mode, displaying A|B|C|D;
 
-sudo apt-get install device-tree-compiler
+::
+
+  sudo apt-get install device-tree-compiler
 
 
 PetaLinux
@@ -17,8 +21,33 @@ PetaLinux
 
 Pre-requirements
 -------------------
+ 
  tftpd
+ 
  zlib1g-dev and zlib1g-dev:i386
+
+
+ petalinux-v2017.4-final-installer.run /opt/peta
+ 
+    Installing PetaLinux zynqMP Yocto SDK to "/opt/peta/./components/yocto/source/aarch64
+    Each time you wish to use the SDK in a new shell session, you need to source the environment setup script e.g.
+       $ . /opt/peta/components/yocto/source/aarch64/environment-setup-aarch64-xilinx-linux
+
+    Installing PetaLinux zynq Yocto SDK to "/opt/peta/./components/yocto/source/arm
+    Each time you wish to use the SDK in a new shell session, you need to source the environment setup script e.g.
+       $ . /opt/peta/components/yocto/source/arm/environment-setup-cortexa9hf-neon-xilinx-linux-gnueabi
+
+    Installing PetaLinux microblaze (Full) Yocto SDK to "/opt/peta/./components/yocto/source/microblaze_full
+    Each time you wish to use the SDK in a new shell session, you need to source the environment setup script e.g.
+       $ . /opt/peta/components/yocto/source/microblaze_full/environment-setup-microblazeel-v10.0-bs-cmp-mh-div-xilinx-linux
+
+    Installing PetaLinux microblaze (Lite) Yocto SDK to "/opt/peta/./components/yocto/source/microblaze_lite
+    Each time you wish to use the SDK in a new shell session, you need to source the environment setup script e.g.
+       $ . /opt/peta/components/yocto/source/microblaze_lite/environment-setup-microblazeel-v10.0-bs-cmp-ml-xilinx-linux
+
+ 
+ or when in /opt/peta
+ ../petalinux-v2017.4-final-installer.run
 
 
 SDK Installation
