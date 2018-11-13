@@ -2,10 +2,16 @@ ubuntu Usage
 ####################################
 Oct.20, 2018
 
+
+Install minicom
+
+sudo apt-get install minicom
+
+
 Install `vim`
 --------------
 Resolve the problem of 4 arrow keye in edit mode, displaying A|B|C|D;
-
+sudo apt-get install vim
 
 PetaLinux
 ===================

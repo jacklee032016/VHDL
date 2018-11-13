@@ -1,0 +1,57 @@
+scripts/kconfig/merge_config.sh -m .config  configMicroblaze.cfg
+
+
+Using .config as base
+Merging configMicroblaze.cfg
+Value of CONFIG_SYS_NS16550 is redefined by fragment configMicroblaze.cfg:
+Previous value: CONFIG_SYS_NS16550=y
+New value: # CONFIG_SYS_NS16550 is not set
+
+Value of CONFIG_XILINX_EMACLITE is redefined by fragment configMicroblaze.cfg:
+Previous value: CONFIG_XILINX_EMACLITE=y
+New value: # CONFIG_XILINX_EMACLITE is not set
+
+sed: cannot rename ./sedSqpF1r: Operation not permitted
+Value of CONFIG_CMD_SPI is redefined by fragment configMicroblaze.cfg:
+Previous value: # CONFIG_CMD_SPI is not set
+New value: CONFIG_CMD_SPI=y
+
+Value of CONFIG_CMD_SF is redefined by fragment configMicroblaze.cfg:
+Previous value: # CONFIG_CMD_SF is not set
+New value: CONFIG_CMD_SF=y
+
+Value of CONFIG_SPI_FLASH_BAR is redefined by fragment configMicroblaze.cfg:
+Previous value: # CONFIG_SPI_FLASH_BAR is not set
+New value: CONFIG_SPI_FLASH_BAR=y
+
+Value of CONFIG_SPI_FLASH_SPANSION is redefined by fragment configMicroblaze.cfg:
+Previous value: # CONFIG_SPI_FLASH_SPANSION is not set
+New value: CONFIG_SPI_FLASH_SPANSION=y
+
+Value of CONFIG_SPI_FLASH_STMICRO is redefined by fragment configMicroblaze.cfg:
+Previous value: # CONFIG_SPI_FLASH_STMICRO is not set
+New value: CONFIG_SPI_FLASH_STMICRO=y
+
+Value of CONFIG_SPI_FLASH_WINBOND is redefined by fragment configMicroblaze.cfg:
+Previous value: # CONFIG_SPI_FLASH_WINBOND is not set
+New value: CONFIG_SPI_FLASH_WINBOND=y
+
+Value of CONFIG_BOOTDELAY is redefined by fragment configMicroblaze.cfg:
+Previous value: CONFIG_BOOTDELAY=-1
+New value: CONFIG_BOOTDELAY=4
+
+Value of CONFIG_SYS_TEXT_BASE is redefined by fragment configMicroblaze.cfg:
+Previous value: CONFIG_SYS_TEXT_BASE=0x29000000
+New value: CONFIG_SYS_TEXT_BASE=0x80100000
+
+Value of CONFIG_SYS_PROMPT is redefined by fragment configMicroblaze.cfg:
+Previous value: CONFIG_SYS_PROMPT="U-Boot-mONStR> "
+New value: CONFIG_SYS_PROMPT="U-Boot>"
+
+Value of CONFIG_SYS_CONFIG_NAME is redefined by fragment configMicroblaze.cfg:
+Previous value: CONFIG_SYS_CONFIG_NAME="microblaze-generic"
+New value: CONFIG_SYS_CONFIG_NAME="platform-top"
+
+#
+# merged configuration written to .config (needs make)
+#

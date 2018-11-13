@@ -2,6 +2,22 @@ U-Boot for MicroBlaze
 ############################
 10.18, 2018
 
+Works
+===============
+config.mk                : boards/xilinx/microblaze
+xparameter.h
+
+microblaze-generic.h    :  include/configs, file name is dependent on CONFIG_SYS_CONFIG_NAME in config
+microblaze-generic.dts  :  arch/microblaze/dts
+
+add following items in Makefile:
+
+::
+
+  KBUILD_VERBOSE = 1
+  ARCH :=microblazeel
+  CROSS_COMPILE :=microblazeel-xilinx-linux-gnu-
+
 
 The devices that have been tested include UART lite, UART 16550, Linear flash, EMAC lite, LL TEMAC with PLB DMA, and AXI EMAC with AXI DMA. The timer counter and interrupt controller were also tested.
 
@@ -57,7 +73,7 @@ use default file:
     <plnx-proj-root>/components/plnx_workspace/device-tree/device-tree-generation/microblaze-generic.dts
     cp <plnx-proj-root>/components/plnx_workspace/device-tree/device-tree-generation/microblaze-generic.dts u-boot-xlnx/arch/microblaze/dts
 
-icroblaze-generic.dts u-boot-xlnx/arch/microblaze/dts
+microblaze-generic.dts u-boot-xlnx/arch/microblaze/dts
 
 
 Make
