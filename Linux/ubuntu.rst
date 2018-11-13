@@ -41,6 +41,20 @@ Install `vim`
 --------------
 Resolve the problem of 4 arrow keye in edit mode, displaying A|B|C|D;
 sudo apt-get install vim
+=======
+Add packages
+-----------------------
+Nov. 2018
+
+=======
+Install `vim`
+--------------
+Resolve the problem of 4 arrow keye in edit mode, displaying A|B|C|D;
+
+::
+
+  sudo apt-get install device-tree-compiler
+
 
 PetaLinux
 ===================
