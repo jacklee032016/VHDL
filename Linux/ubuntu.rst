@@ -3,9 +3,38 @@ ubuntu Usage
 Oct.20, 2018
 
 
-Install minicom
+Ubuntu and Vivado
+------------------------
 
-sudo apt-get install minicom
+/bin/sh link to /bin/dash, it is not bash
+     
+     sudo rm -rf /bin/sh
+     sudo ln -s /bin/bash /bin/sh
+
+Install Xlinx Tools and initializing
+
+add following lines in ~/.profile
+
+    XILINX_VIVADO_HOME=/opt/WebPack/Vivado/2017.4
+
+    cd $XILINX_VIVADO_HOME
+    source settings64.sh
+
+petalinux only been source by command line in terminal window
+cd /opt/peta
+
+source settings.sh
+
+
+Ubuntun merge terminal windows into tab
+----------------------------------------
+    Press 'Ctrl+Shift+T' to create terminal in tab options;
+
+**Install and use minicom**
+
+  sudo apt-get install minicom
+  minicom -s: setup and begin to use;
+  device name: ttyUSB0 (from dmesg)
 
 
 Install `vim`
