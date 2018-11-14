@@ -6,8 +6,9 @@ FS-BOOT
 ==============
 Create relocable binary
 -------------------------
-petalinux-reloc_blob : petalinux/tools/components/scripts has been not usful; it is obselated now;
-mb-realoc.sh : build asemble and create blob for it: add 0x10c(268) bytes header for binary;
+**petalinux-reloc_blob** : petalinux/tools/components/scripts has been not usful; it is obselated now;
+
+**mb-realoc.sh** : build asemble and create blob for it: add 0x10c(268) bytes header for binary;
 
     /*   
      * b8b40008 corresponds to the instruction "brlid r5, locator;"  
@@ -22,7 +23,8 @@ mb-realoc.sh : build asemble and create blob for it: add 0x10c(268) bytes header
    
 
 create MCS file (by vivado) to program FPGA device
-petalinux-package --boot
+
+**petalinux-package --boot**
 
 
 Create bit stream of FPGA+ELF
@@ -48,6 +50,7 @@ FS-Boot and QEMU
 qemu can't run fs-boot.elf, other ELFs work fine:
 
 fs-boot is load and run in BRAM, qemu can't initialize BRAM??
+
 Link fs-boot to RAM, then it works;
 
 
