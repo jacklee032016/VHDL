@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<SourceInsightConfiguration
+	AppVer="4.00.0032"
+	AppVerMinReader="4.00.0008"
+	>
+	<!-- This is a Source Insight configuration file. -->
+	<!-- www.sourceinsight.com -->
+
+	<Languages>
+		<Language
+			Name="PIC"
+			Comment=""
+			CaseSensitive="0"
+			CPreprocessor="0"
+			SmartIndent="0"
+			ContainsSourceCode="1"
+			SyntaxFormatting="1"
+			UseRegexParsing="1"
+			SyntaxDecorations="0"
+			CommentStyles="0"
+			AllowSmartTab="0"
+			DetectNumbers="1"
+			CHexNum="0"
+			IntelHexNum="0"
+			MotorolaHexNum="0"
+			BasicHexNum="0"
+			IntelOctalNum="0"
+			QOctalNum="0"
+			NonAlphaNumIdentChars="_"
+			>
+			<CustomParsing>
+				<Expression
+					SymbolType="Variable"
+					Pattern="^\([A-Za-z0-9]+\)\w+equ\w+"
+					RegexType="Source Insight"
+					/>
+			</CustomParsing>
+			<Ranges>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString=";"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+			</Ranges>
+			<Keywords>
+				<Item Keyword="addcf" Style="Keyword" />
+				<Item Keyword="adddcf" Style="Keyword" />
+				<Item Keyword="addlw" Style="Keyword" />
+				<Item Keyword="addwf" Style="Keyword" />
+				<Item Keyword="andlw" Style="Keyword" />
+				<Item Keyword="andwf" Style="Keyword" />
+				<Item Keyword="bc" Style="Keyword" />
+				<Item Keyword="bcf" Style="Keyword" />
+				<Item Keyword="bdc" Style="Keyword" />
+				<Item Keyword="bnc" Style="Keyword" />
+				<Item Keyword="bndc" Style="Keyword" />
+				<Item Keyword="bnz" Style="Keyword" />
+				<Item Keyword="bsf" Style="Keyword" />
+				<Item Keyword="btfsc" Style="Keyword" />
+				<Item Keyword="btfss" Style="Keyword" />
+				<Item Keyword="bz" Style="Keyword" />
+				<Item Keyword="call" Style="Keyword" />
+				<Item Keyword="clrc" Style="Keyword" />
+				<Item Keyword="clrdc" Style="Keyword" />
+				<Item Keyword="clrf" Style="Keyword" />
+				<Item Keyword="clrw" Style="Keyword" />
+				<Item Keyword="clrwdt" Style="Keyword" />
+				<Item Keyword="clrz" Style="Keyword" />
+				<Item Keyword="comf" Style="Keyword" />
+				<Item Keyword="decf" Style="Keyword" />
+				<Item Keyword="decfsz" Style="Keyword" />
+				<Item Keyword="equ" Style="Keyword" />
+				<Item Keyword="goto" Style="Keyword" />
+				<Item Keyword="incf" Style="Keyword" />
+				<Item Keyword="incfsz" Style="Keyword" />
+				<Item Keyword="iorlw" Style="Keyword" />
+				<Item Keyword="iorwf" Style="Keyword" />
+				<Item Keyword="movf" Style="Keyword" />
+				<Item Keyword="movfw" Style="Keyword" />
+				<Item Keyword="movlw" Style="Keyword" />
+				<Item Keyword="movwf" Style="Keyword" />
+				<Item Keyword="nop" Style="Keyword" />
+				<Item Keyword="radix" Style="Keyword" />
+				<Item Keyword="retfie" Style="Keyword" />
+				<Item Keyword="retlw" Style="Keyword" />
+				<Item Keyword="return" Style="Keyword" />
+				<Item Keyword="rlf" Style="Keyword" />
+				<Item Keyword="rrf" Style="Keyword" />
+				<Item Keyword="setc" Style="Keyword" />
+				<Item Keyword="setdc" Style="Keyword" />
+				<Item Keyword="setz" Style="Keyword" />
+				<Item Keyword="skpc" Style="Keyword" />
+				<Item Keyword="skpdc" Style="Keyword" />
+				<Item Keyword="skpnc" Style="Keyword" />
+				<Item Keyword="skpndc" Style="Keyword" />
+				<Item Keyword="skpnz" Style="Keyword" />
+				<Item Keyword="skpz" Style="Keyword" />
+				<Item Keyword="sleep" Style="Keyword" />
+				<Item Keyword="subcf" Style="Keyword" />
+				<Item Keyword="subdcf" Style="Keyword" />
+				<Item Keyword="sublw" Style="Keyword" />
+				<Item Keyword="subwf" Style="Keyword" />
+				<Item Keyword="swapf" Style="Keyword" />
+				<Item Keyword="tstf" Style="Keyword" />
+				<Item Keyword="xorlw" Style="Keyword" />
+				<Item Keyword="xorwf" Style="Keyword" />
+			</Keywords>
+		</Language>
+	</Languages>
+</SourceInsightConfiguration>

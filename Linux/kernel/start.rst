@@ -16,4 +16,12 @@ Kernel and DTB
 ================
 When qemu is used, kernel get dtb from qemu (outside of kernel);
 
- 	
+
+Build Options
+===============
+machine related flags;
+
+No modulars are built to minimize the time of build
+
+early_print: use reg of serial port and version(UARTLITE) directly;
+

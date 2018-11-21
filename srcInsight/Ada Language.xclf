@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceInsightConfiguration
+	AppVer="4.00.0093"
+	AppVerMinReader="4.00.0032"
+	>
+	<!-- This is a Source Insight configuration file. -->
+	<!-- www.sourceinsight.com -->
+
+	<Languages>
+		<Language
+			Name="Ada Language"
+			Comment=""
+			CaseSensitive="0"
+			CPreprocessor="0"
+			SmartIndent="0"
+			ContainsSourceCode="1"
+			SyntaxFormatting="1"
+			UseRegexParsing="1"
+			SyntaxDecorations="0"
+			CommentStyles="0"
+			AllowSmartTab="0"
+			DetectNumbers="1"
+			CHexNum="0"
+			IntelHexNum="0"
+			MotorolaHexNum="0"
+			BasicHexNum="0"
+			IntelOctalNum="0"
+			QOctalNum="0"
+			NonAlphaNumIdentChars="_"
+			>
+			<CustomParsing>
+				<Expression
+					SymbolType="Function"
+					Pattern="procedure\w+\([a-zA-Z_][a-zA-Z0-9_]*\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Type Definition"
+					Pattern="type\w+\([a-zA-Z_][a-zA-Z0-9_]*\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Package"
+					Pattern="package\w+\([a-zA-Z_][a-zA-Z0-9_.]*\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Function"
+					Pattern="function\w+\([a-zA-Z_][a-zA-Z0-9_]*\)"
+					RegexType="Source Insight"
+					/>
+			</CustomParsing>
+			<Ranges>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="--"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Multiline"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="String"
+					StyleDelimiter="1"
+					StartString="&quot;"
+					EndString="&quot;"
+					EscapeString="\"
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+			</Ranges>
+			<Keywords>
+				<Item Keyword="&amp;" Style="Operator" />
+				<Item Keyword="&apos;" Style="Delimiter" />
+				<Item Keyword="(" Style="Delimiter" />
+				<Item Keyword=")" Style="Delimiter" />
+				<Item Keyword="*" Style="Operator" />
+				<Item Keyword="+" Style="Operator" />
+				<Item Keyword="," Style="Delimiter" />
+				<Item Keyword="-" Style="Operator" />
+				<Item Keyword="/" Style="Operator" />
+				<Item Keyword="/=" Style="Operator" />
+				<Item Keyword=":" Style="Delimiter" />
+				<Item Keyword=":=" Style="Delimiter" />
+				<Item Keyword=";" Style="Delimiter" />
+				<Item Keyword="&lt;" Style="Operator" />
+				<Item Keyword="&lt;&lt;" Style="Delimiter" />
+				<Item Keyword="&lt;=" Style="Operator" />
+				<Item Keyword="&lt;&gt;" Style="Delimiter" />
+				<Item Keyword="=" Style="Operator" />
+				<Item Keyword="=&gt;" Style="Delimiter" />
+				<Item Keyword="&gt;" Style="Operator" />
+				<Item Keyword="&gt;=" Style="Operator" />
+				<Item Keyword="&gt;&gt;" Style="Delimiter" />
+				<Item Keyword="abort" Style="Keyword" />
+				<Item Keyword="abs" Style="Keyword" />
+				<Item Keyword="abstract" Style="Keyword" />
+				<Item Keyword="accept" Style="Keyword" />
+				<Item Keyword="access" Style="Keyword" />
+				<Item Keyword="aliased" Style="Keyword" />
+				<Item Keyword="all" Style="Keyword" />
+				<Item Keyword="and" Style="Keyword" />
+				<Item Keyword="array" Style="Keyword" />
+				<Item Keyword="at" Style="Keyword" />
+				<Item Keyword="begin" Style="Control" />
+				<Item Keyword="body" Style="Keyword" />
+				<Item Keyword="Boolean" Style="System" />
+				<Item Keyword="case" Style="Control" />
+				<Item Keyword="Character" Style="System" />
+				<Item Keyword="constant" Style="Keyword" />
+				<Item Keyword="declare" Style="Keyword" />
+				<Item Keyword="delay" Style="Keyword" />
+				<Item Keyword="delta" Style="Keyword" />
+				<Item Keyword="digits" Style="Keyword" />
+				<Item Keyword="do" Style="Control" />
+				<Item Keyword="Duration" Style="System" />
+				<Item Keyword="else" Style="Control" />
+				<Item Keyword="elsif" Style="Control" />
+				<Item Keyword="end" Style="Control" />
+				<Item Keyword="entry" Style="Keyword" />
+				<Item Keyword="exception" Style="Keyword" />
+				<Item Keyword="exit" Style="Control" />
+				<Item Keyword="Float" Style="System" />
+				<Item Keyword="for" Style="Control" />
+				<Item Keyword="function" Style="Control" />
+				<Item Keyword="generic" Style="Keyword" />
+				<Item Keyword="goto" Style="Control" />
+				<Item Keyword="if" Style="Control" />
+				<Item Keyword="in" Style="Keyword" />
+				<Item Keyword="Integer" Style="System" />
+				<Item Keyword="interface" Style="Keyword" />
+				<Item Keyword="is" Style="Keyword" />
+				<Item Keyword="limited" Style="Keyword" />
+				<Item Keyword="loop" Style="Control" />
+				<Item Keyword="mod" Style="Keyword" />
+				<Item Keyword="new" Style="Keyword" />
+				<Item Keyword="not" Style="Keyword" />
+				<Item Keyword="null" Style="Keyword" />
+				<Item Keyword="of" Style="Keyword" />
+				<Item Keyword="or" Style="Keyword" />
+				<Item Keyword="others" Style="Keyword" />
+				<Item Keyword="out" Style="Keyword" />
+				<Item Keyword="overriding" Style="Keyword" />
+				<Item Keyword="package" Style="Control" />
+				<Item Keyword="pragma" Style="Keyword" />
+				<Item Keyword="private" Style="Keyword" />
+				<Item Keyword="procedure" Style="Control" />
+				<Item Keyword="protected" Style="Keyword" />
+				<Item Keyword="raise" Style="Keyword" />
+				<Item Keyword="range" Style="Keyword" />
+				<Item Keyword="record" Style="Keyword" />
+				<Item Keyword="rem" Style="Keyword" />
+				<Item Keyword="renames" Style="Keyword" />
+				<Item Keyword="requeue" Style="Keyword" />
+				<Item Keyword="return" Style="Control" />
+				<Item Keyword="reverse" Style="Keyword" />
+				<Item Keyword="select" Style="Control" />
+				<Item Keyword="separate" Style="Keyword" />
+				<Item Keyword="some" Style="Keyword" />
+				<Item Keyword="String" Style="System" />
+				<Item Keyword="subtype" Style="Keyword" />
+				<Item Keyword="synchronized" Style="Keyword" />
+				<Item Keyword="tagged" Style="Keyword" />
+				<Item Keyword="task" Style="Keyword" />
+				<Item Keyword="terminate" Style="Control" />
+				<Item Keyword="then" Style="Control" />
+				<Item Keyword="type" Style="Keyword" />
+				<Item Keyword="until" Style="Control" />
+				<Item Keyword="use" Style="Keyword" />
+				<Item Keyword="when" Style="Keyword" />
+				<Item Keyword="while" Style="Control" />
+				<Item Keyword="with" Style="Keyword" />
+				<Item Keyword="xor" Style="Keyword" />
+				<Item Keyword="{" Style="Delimiter" />
+				<Item Keyword="[" Style="Delimiter" />
+				<Item Keyword="}" Style="Delimiter" />
+				<Item Keyword="]" Style="Delimiter" />
+			</Keywords>
+		</Language>
+	</Languages>
+</SourceInsightConfiguration>

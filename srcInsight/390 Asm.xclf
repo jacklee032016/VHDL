@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<SourceInsightConfiguration
+	AppVer="4.00.0032"
+	AppVerMinReader="4.00.0008"
+	>
+	<!-- This is a Source Insight configuration file. -->
+	<!-- www.sourceinsight.com -->
+
+	<Languages>
+		<Language
+			Name="390 Asm"
+			Comment=""
+			CaseSensitive="0"
+			CPreprocessor="0"
+			SmartIndent="0"
+			ContainsSourceCode="1"
+			SyntaxFormatting="1"
+			UseRegexParsing="1"
+			SyntaxDecorations="0"
+			CommentStyles="0"
+			AllowSmartTab="0"
+			DetectNumbers="0"
+			CHexNum="0"
+			IntelHexNum="0"
+			MotorolaHexNum="0"
+			BasicHexNum="0"
+			IntelOctalNum="0"
+			QOctalNum="0"
+			NonAlphaNumIdentChars="_"
+			>
+			<CustomParsing>
+				<Expression
+					SymbolType="#-Directive"
+					Pattern="^\([A-Za-z#@$.&amp;_][A-Za-z0-9#@$_]*\) *EQU "
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Structure"
+					Pattern="^\([A-Za-z#@$.&amp;_][A-Za-z0-9#@_$.&amp;]*\) *DSECT"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Variable"
+					Pattern="^\([A-Za-z#@$.&amp;_][A-Za-z0-9#@$_]*\) *DS +[^0]"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Function"
+					Pattern="^ *\([A-Za-z#@$&amp;_][A-Za-z0-9#@$_]*\) *CSECT"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Variable"
+					Pattern="^\([A-Za-z#@$.&amp;_][A-Za-z0-9#@$_]*\) *DC +[^0]"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Member Function"
+					Pattern="^ +ENTRY +[#@$]*\([A-Za-z_][A-Za-z0-9#@$_]*\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Function Template"
+					Pattern="^\([A-Za-z#@$.&amp;_][A-Za-z0-9#@_$.&amp;_]*\) *ALIAS"
+					RegexType="Source Insight"
+					/>
+			</CustomParsing>
+			<Ranges>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="*"
+					EscapeString=""
+					ValidateColumns="1"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+			</Ranges>
+			<Keywords>
+				<Item Keyword="AGO" Style="Ref to Interface" />
+				<Item Keyword="AIF" Style="Ref to Interface" />
+				<Item Keyword="ANOP" Style="Ref to Interface" />
+				<Item Keyword="B" Style="Control" />
+				<Item Keyword="BAL" Style="Control" />
+				<Item Keyword="BALR" Style="Control" />
+				<Item Keyword="BE" Style="Control" />
+				<Item Keyword="BER" Style="Control" />
+				<Item Keyword="BM" Style="Control" />
+				<Item Keyword="BNE" Style="Control" />
+				<Item Keyword="BNER" Style="Control" />
+				<Item Keyword="BNH" Style="Control" />
+				<Item Keyword="BNO" Style="Control" />
+				<Item Keyword="BNZ" Style="Control" />
+				<Item Keyword="BO" Style="Control" />
+				<Item Keyword="BR" Style="Control" />
+				<Item Keyword="BZ" Style="Keyword" />
+				<Item Keyword="CNOP" Style="Ref to Interface" />
+				<Item Keyword="COPY" Style="Ref to Interface" />
+				<Item Keyword="CSECT" Style="Keyword" />
+				<Item Keyword="DC" Style="Keyword" />
+				<Item Keyword="DROP" Style="Declare Template Parameter" />
+				<Item Keyword="DSECT" Style="Keyword" />
+				<Item Keyword="GBLC" Style="Ref to Interface" />
+				<Item Keyword="LTORG" Style="Ref to Interface" />
+				<Item Keyword="MEND" Style="Ref to Interface" />
+				<Item Keyword="MNOTE" Style="Ref to Interface" />
+				<Item Keyword="NOPR" Style="Ref to Interface" />
+				<Item Keyword="POP" Style="Declare Template Parameter" />
+				<Item Keyword="PUSH" Style="Declare Template Parameter" />
+				<Item Keyword="R0" Style="Register" />
+				<Item Keyword="R1" Style="Register" />
+				<Item Keyword="R10" Style="Auto Annotations" />
+				<Item Keyword="R11" Style="Auto Annotations" />
+				<Item Keyword="R12" Style="Auto Annotations" />
+				<Item Keyword="R13" Style="Auto Annotations" />
+				<Item Keyword="R14" Style="Auto Annotations" />
+				<Item Keyword="R15" Style="Auto Annotations" />
+				<Item Keyword="R2" Style="Auto Annotations" />
+				<Item Keyword="R3" Style="Auto Annotations" />
+				<Item Keyword="R4" Style="Auto Annotations" />
+				<Item Keyword="R5" Style="Auto Annotations" />
+				<Item Keyword="R6" Style="Auto Annotations" />
+				<Item Keyword="R7" Style="Auto Annotations" />
+				<Item Keyword="R8" Style="Auto Annotations" />
+				<Item Keyword="R9" Style="Auto Annotations" />
+				<Item Keyword="SETA" Style="Ref to Interface" />
+				<Item Keyword="SETB" Style="Ref to Interface" />
+				<Item Keyword="SETC" Style="Ref to Interface" />
+				<Item Keyword="USING" Style="Declare Template Parameter" />
+				<Item Keyword="XL" Style="Keyword" />
+			</Keywords>
+		</Language>
+	</Languages>
+</SourceInsightConfiguration>

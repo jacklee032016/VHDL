@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<SourceInsightConfiguration
+	AppVer="4.00.0032"
+	AppVerMinReader="4.00.0008"
+	>
+	<!-- This is a Source Insight configuration file. -->
+	<!-- www.sourceinsight.com -->
+
+	<Languages>
+		<Language
+			Name="CMD Batch"
+			Comment=""
+			CaseSensitive="0"
+			CPreprocessor="0"
+			SmartIndent="0"
+			ContainsSourceCode="1"
+			SyntaxFormatting="1"
+			UseRegexParsing="1"
+			SyntaxDecorations="0"
+			CommentStyles="0"
+			AllowSmartTab="0"
+			DetectNumbers="1"
+			CHexNum="0"
+			IntelHexNum="0"
+			MotorolaHexNum="0"
+			BasicHexNum="0"
+			IntelOctalNum="0"
+			QOctalNum="0"
+			NonAlphaNumIdentChars="_"
+			>
+			<CustomParsing>
+				<Expression
+					SymbolType="Macro"
+					Pattern="\(&quot;.*&quot;\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Label"
+					Pattern="\(:[a-zA-Z0-9]+\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Function Prototype"
+					Pattern="\(:[Ee][Oo][Ff]\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Function"
+					Pattern="\([A-Za-z0-9]+\.[Bb][Aa][Tt]\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Enum Constant"
+					Pattern="\(\%[0-9T]\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Structure"
+					Pattern="\(/.+\) "
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Structure"
+					Pattern="\(/.+\)$"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Structure"
+					Pattern="\(-.+\) "
+					RegexType="Source Insight"
+					/>
+			</CustomParsing>
+			<Ranges>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="echo"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+			</Ranges>
+			<Keywords>
+				<Item Keyword="==" Style="Operator" />
+				<Item Keyword="@" Style="Keyword" />
+				<Item Keyword="ASSOC" Style="Keyword" />
+				<Item Keyword="AT" Style="Keyword" />
+				<Item Keyword="ATTRIB" Style="Keyword" />
+				<Item Keyword="BREAK" Style="Keyword" />
+				<Item Keyword="CACLS" Style="Keyword" />
+				<Item Keyword="CALL" Style="Keyword" />
+				<Item Keyword="CD" Style="Keyword" />
+				<Item Keyword="CHCP" Style="Keyword" />
+				<Item Keyword="CHDIR" Style="Keyword" />
+				<Item Keyword="CHKDSK" Style="Keyword" />
+				<Item Keyword="CHKNTFS" Style="Keyword" />
+				<Item Keyword="CLS" Style="Keyword" />
+				<Item Keyword="CMD" Style="Keyword" />
+				<Item Keyword="CMDEXTVERSION" Style="Keyword" />
+				<Item Keyword="COLOR" Style="Keyword" />
+				<Item Keyword="COMP" Style="Keyword" />
+				<Item Keyword="COMPACT" Style="Keyword" />
+				<Item Keyword="CONVERT" Style="Keyword" />
+				<Item Keyword="COPY" Style="Keyword" />
+				<Item Keyword="DATE" Style="Keyword" />
+				<Item Keyword="DEFINED" Style="Operator" />
+				<Item Keyword="DEL" Style="Keyword" />
+				<Item Keyword="DIR" Style="Keyword" />
+				<Item Keyword="DISKCOMP" Style="Keyword" />
+				<Item Keyword="DISKCOPY" Style="Keyword" />
+				<Item Keyword="DOSKEY" Style="Keyword" />
+				<Item Keyword="ECHO" Style="Keyword" />
+				<Item Keyword="ELSE" Style="Keyword" />
+				<Item Keyword="ENDLOCAL" Style="Keyword" />
+				<Item Keyword="EQU" Style="Operator" />
+				<Item Keyword="ERASE" Style="Keyword" />
+				<Item Keyword="ERRORLEVEL" Style="Operator" />
+				<Item Keyword="EXIST" Style="Operator" />
+				<Item Keyword="EXIT" Style="Keyword" />
+				<Item Keyword="FC" Style="Keyword" />
+				<Item Keyword="FIND" Style="Keyword" />
+				<Item Keyword="FINDSTR" Style="Keyword" />
+				<Item Keyword="FOR" Style="Keyword" />
+				<Item Keyword="FORMAT" Style="Keyword" />
+				<Item Keyword="FTYPE" Style="Keyword" />
+				<Item Keyword="GEQ" Style="Operator" />
+				<Item Keyword="GOTO" Style="Keyword" />
+				<Item Keyword="GRAFTABL" Style="Keyword" />
+				<Item Keyword="GTR" Style="Operator" />
+				<Item Keyword="HELP" Style="Keyword" />
+				<Item Keyword="IF" Style="Keyword" />
+				<Item Keyword="LABEL" Style="Keyword" />
+				<Item Keyword="LEQ" Style="Operator" />
+				<Item Keyword="LSS" Style="Operator" />
+				<Item Keyword="MD" Style="Keyword" />
+				<Item Keyword="MKDIR" Style="Keyword" />
+				<Item Keyword="MODE" Style="Keyword" />
+				<Item Keyword="MORE" Style="Keyword" />
+				<Item Keyword="MOVE" Style="Keyword" />
+				<Item Keyword="NEQ" Style="Operator" />
+				<Item Keyword="NOT" Style="Operator" />
+				<Item Keyword="PATH" Style="Keyword" />
+				<Item Keyword="PAUSE" Style="Keyword" />
+				<Item Keyword="POPD" Style="Keyword" />
+				<Item Keyword="PRINT" Style="Keyword" />
+				<Item Keyword="PROMPT" Style="Keyword" />
+				<Item Keyword="PUSHD" Style="Keyword" />
+				<Item Keyword="RD" Style="Keyword" />
+				<Item Keyword="RECOVER" Style="Keyword" />
+				<Item Keyword="REM" Style="Keyword" />
+				<Item Keyword="REN" Style="Keyword" />
+				<Item Keyword="RENAME" Style="Keyword" />
+				<Item Keyword="REPLACE" Style="Keyword" />
+				<Item Keyword="RMDIR" Style="Keyword" />
+				<Item Keyword="SET" Style="Keyword" />
+				<Item Keyword="SETLOCAL" Style="Keyword" />
+				<Item Keyword="SHIFT" Style="Keyword" />
+				<Item Keyword="SORT" Style="Keyword" />
+				<Item Keyword="START" Style="Keyword" />
+				<Item Keyword="SUBST" Style="Keyword" />
+				<Item Keyword="TIME" Style="Keyword" />
+				<Item Keyword="TITLE" Style="Keyword" />
+				<Item Keyword="TREE" Style="Keyword" />
+				<Item Keyword="TYPE" Style="Keyword" />
+				<Item Keyword="VER" Style="Keyword" />
+				<Item Keyword="VERIFY" Style="Keyword" />
+				<Item Keyword="VOL" Style="Keyword" />
+				<Item Keyword="XCOPY" Style="Keyword" />
+			</Keywords>
+		</Language>
+	</Languages>
+</SourceInsightConfiguration>

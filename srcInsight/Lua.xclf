@@ -1,0 +1,418 @@
+<?xml version="1.0" ?>
+<SourceInsightConfiguration
+	AppVer="4.00.0032"
+	AppVerMinReader="4.00.0008"
+	>
+	<!-- This is a Source Insight configuration file. -->
+	<!-- www.sourceinsight.com -->
+
+	<Languages>
+		<Language
+			Name="Lua"
+			Comment=""
+			CaseSensitive="0"
+			CPreprocessor="0"
+			SmartIndent="0"
+			ContainsSourceCode="1"
+			SyntaxFormatting="1"
+			UseRegexParsing="1"
+			SyntaxDecorations="0"
+			CommentStyles="0"
+			AllowSmartTab="0"
+			DetectNumbers="1"
+			CHexNum="0"
+			IntelHexNum="0"
+			MotorolaHexNum="0"
+			BasicHexNum="0"
+			IntelOctalNum="0"
+			QOctalNum="0"
+			NonAlphaNumIdentChars="_"
+			>
+			<CustomParsing>
+				<Expression
+					SymbolType="Function"
+					Pattern="function\w+\([a-zA-Z][a-zA-Z0-9]*\)"
+					RegexType="Source Insight"
+					/>
+			</CustomParsing>
+			<Ranges>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="--"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Multiline"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="String"
+					StyleDelimiter="1"
+					StartString="&apos;"
+					EndString="&apos;"
+					EscapeString="\"
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Multiline"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="String"
+					StyleDelimiter="1"
+					StartString="&quot;"
+					EndString="&quot;"
+					EscapeString="\"
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+			</Ranges>
+			<Keywords>
+				<Item Keyword="#" Style="Operator" />
+				<Item Keyword="%" Style="Operator" />
+				<Item Keyword="(" Style="Operator" />
+				<Item Keyword=")" Style="Operator" />
+				<Item Keyword="*" Style="Operator" />
+				<Item Keyword="+" Style="Operator" />
+				<Item Keyword="," Style="Operator" />
+				<Item Keyword="-" Style="Operator" />
+				<Item Keyword="." Style="Operator" />
+				<Item Keyword=".." Style="Operator" />
+				<Item Keyword="..." Style="Operator" />
+				<Item Keyword="/" Style="Operator" />
+				<Item Keyword=":" Style="Operator" />
+				<Item Keyword="::=" Style="Operator" />
+				<Item Keyword=";" Style="Operator" />
+				<Item Keyword="&lt;" Style="Operator" />
+				<Item Keyword="&lt;=" Style="Operator" />
+				<Item Keyword="=" Style="Operator" />
+				<Item Keyword="==" Style="Operator" />
+				<Item Keyword="&gt;" Style="Operator" />
+				<Item Keyword="&gt;=" Style="Operator" />
+				<Item Keyword="and" Style="Control" />
+				<Item Keyword="assert" Style="Keyword" />
+				<Item Keyword="break" Style="Control" />
+				<Item Keyword="collectgarbage" Style="Keyword" />
+				<Item Keyword="coroutine.create" Style="Keyword" />
+				<Item Keyword="coroutine.resume" Style="Keyword" />
+				<Item Keyword="coroutine.running" Style="Keyword" />
+				<Item Keyword="coroutine.status" Style="Keyword" />
+				<Item Keyword="coroutine.wrap" Style="Keyword" />
+				<Item Keyword="coroutine.yield" Style="Keyword" />
+				<Item Keyword="debug.debug" Style="Keyword" />
+				<Item Keyword="debug.getfenv" Style="Keyword" />
+				<Item Keyword="debug.gethook" Style="Keyword" />
+				<Item Keyword="debug.getinfo" Style="Keyword" />
+				<Item Keyword="debug.getlocal" Style="Keyword" />
+				<Item Keyword="debug.getmetatable" Style="Keyword" />
+				<Item Keyword="debug.getregistry" Style="Keyword" />
+				<Item Keyword="debug.getupvalue" Style="Keyword" />
+				<Item Keyword="debug.setfenv" Style="Keyword" />
+				<Item Keyword="debug.sethook" Style="Keyword" />
+				<Item Keyword="debug.setlocal" Style="Keyword" />
+				<Item Keyword="debug.setmetatable" Style="Keyword" />
+				<Item Keyword="debug.setupvalue" Style="Keyword" />
+				<Item Keyword="debug.traceback" Style="Keyword" />
+				<Item Keyword="do" Style="Control" />
+				<Item Keyword="dofile" Style="Keyword" />
+				<Item Keyword="else" Style="Control" />
+				<Item Keyword="elseif" Style="Control" />
+				<Item Keyword="end" Style="Control" />
+				<Item Keyword="error" Style="Keyword" />
+				<Item Keyword="false" Style="Control" />
+				<Item Keyword="file:close" Style="Keyword" />
+				<Item Keyword="file:flush" Style="Keyword" />
+				<Item Keyword="file:lines" Style="Keyword" />
+				<Item Keyword="file:read" Style="Keyword" />
+				<Item Keyword="file:seek" Style="Keyword" />
+				<Item Keyword="file:setvbuf" Style="Keyword" />
+				<Item Keyword="file:write" Style="Keyword" />
+				<Item Keyword="for" Style="Control" />
+				<Item Keyword="function" Style="Control" />
+				<Item Keyword="_G" Style="Keyword" />
+				<Item Keyword="getfenv" Style="Keyword" />
+				<Item Keyword="getmetatable" Style="Keyword" />
+				<Item Keyword="if" Style="Control" />
+				<Item Keyword="in" Style="Control" />
+				<Item Keyword="io.close" Style="Keyword" />
+				<Item Keyword="io.flush" Style="Keyword" />
+				<Item Keyword="io.input" Style="Keyword" />
+				<Item Keyword="io.lines" Style="Keyword" />
+				<Item Keyword="io.open" Style="Keyword" />
+				<Item Keyword="io.output" Style="Keyword" />
+				<Item Keyword="io.popen" Style="Keyword" />
+				<Item Keyword="io.read" Style="Keyword" />
+				<Item Keyword="io.tmpfile" Style="Keyword" />
+				<Item Keyword="io.type" Style="Keyword" />
+				<Item Keyword="io.write" Style="Keyword" />
+				<Item Keyword="ipairs" Style="Keyword" />
+				<Item Keyword="load" Style="Keyword" />
+				<Item Keyword="loadfile" Style="Keyword" />
+				<Item Keyword="loadstring" Style="Keyword" />
+				<Item Keyword="local" Style="Keyword" />
+				<Item Keyword="luaL_addchar" Style="Keyword" />
+				<Item Keyword="luaL_addlstring" Style="Keyword" />
+				<Item Keyword="luaL_addsize" Style="Keyword" />
+				<Item Keyword="luaL_addstring" Style="Keyword" />
+				<Item Keyword="luaL_addvalue" Style="Keyword" />
+				<Item Keyword="luaL_argcheck" Style="Keyword" />
+				<Item Keyword="luaL_argerror" Style="Keyword" />
+				<Item Keyword="luaL_Buffer" Style="Keyword" />
+				<Item Keyword="luaL_buffinit" Style="Keyword" />
+				<Item Keyword="luaL_callmeta" Style="Keyword" />
+				<Item Keyword="luaL_checkany" Style="Keyword" />
+				<Item Keyword="luaL_checkint" Style="Keyword" />
+				<Item Keyword="luaL_checkinteger" Style="Keyword" />
+				<Item Keyword="luaL_checklong" Style="Keyword" />
+				<Item Keyword="luaL_checklstring" Style="Keyword" />
+				<Item Keyword="luaL_checknumber" Style="Keyword" />
+				<Item Keyword="luaL_checkoption" Style="Keyword" />
+				<Item Keyword="luaL_checkstack" Style="Keyword" />
+				<Item Keyword="luaL_checkstring" Style="Keyword" />
+				<Item Keyword="luaL_checktype" Style="Keyword" />
+				<Item Keyword="luaL_checkudata" Style="Keyword" />
+				<Item Keyword="luaL_dofile" Style="Keyword" />
+				<Item Keyword="luaL_dostring" Style="Keyword" />
+				<Item Keyword="luaL_error" Style="Keyword" />
+				<Item Keyword="luaL_getmetafield" Style="Keyword" />
+				<Item Keyword="luaL_getmetatable" Style="Keyword" />
+				<Item Keyword="luaL_gsub" Style="Keyword" />
+				<Item Keyword="luaL_loadbuffer" Style="Keyword" />
+				<Item Keyword="luaL_loadfile" Style="Keyword" />
+				<Item Keyword="luaL_loadstring" Style="Keyword" />
+				<Item Keyword="luaL_newmetatable" Style="Keyword" />
+				<Item Keyword="luaL_newstate" Style="Keyword" />
+				<Item Keyword="luaL_openlibs" Style="Keyword" />
+				<Item Keyword="luaL_optint" Style="Keyword" />
+				<Item Keyword="luaL_optinteger" Style="Keyword" />
+				<Item Keyword="luaL_optlong" Style="Keyword" />
+				<Item Keyword="luaL_optlstring" Style="Keyword" />
+				<Item Keyword="luaL_optnumber" Style="Keyword" />
+				<Item Keyword="luaL_optstring" Style="Keyword" />
+				<Item Keyword="luaL_prepbuffer" Style="Keyword" />
+				<Item Keyword="luaL_pushresult" Style="Keyword" />
+				<Item Keyword="luaL_ref" Style="Keyword" />
+				<Item Keyword="luaL_Reg" Style="Keyword" />
+				<Item Keyword="luaL_register" Style="Keyword" />
+				<Item Keyword="luaL_typename" Style="Keyword" />
+				<Item Keyword="luaL_typerror" Style="Keyword" />
+				<Item Keyword="luaL_unref" Style="Keyword" />
+				<Item Keyword="luaL_where" Style="Keyword" />
+				<Item Keyword="lua_Alloc" Style="Keyword" />
+				<Item Keyword="lua_atpanic" Style="Keyword" />
+				<Item Keyword="lua_call" Style="Keyword" />
+				<Item Keyword="lua_CFunction" Style="Keyword" />
+				<Item Keyword="lua_checkstack" Style="Keyword" />
+				<Item Keyword="lua_close" Style="Keyword" />
+				<Item Keyword="lua_concat" Style="Keyword" />
+				<Item Keyword="lua_cpcall" Style="Keyword" />
+				<Item Keyword="lua_createtable" Style="Keyword" />
+				<Item Keyword="lua_Debug" Style="Keyword" />
+				<Item Keyword="lua_dump" Style="Keyword" />
+				<Item Keyword="lua_equal" Style="Keyword" />
+				<Item Keyword="lua_error" Style="Keyword" />
+				<Item Keyword="lua_gc" Style="Keyword" />
+				<Item Keyword="lua_getallocf" Style="Keyword" />
+				<Item Keyword="lua_getfenv" Style="Keyword" />
+				<Item Keyword="lua_getfield" Style="Keyword" />
+				<Item Keyword="lua_getglobal" Style="Keyword" />
+				<Item Keyword="lua_gethook" Style="Keyword" />
+				<Item Keyword="lua_gethookcount" Style="Keyword" />
+				<Item Keyword="lua_gethookmask" Style="Keyword" />
+				<Item Keyword="lua_getinfo" Style="Keyword" />
+				<Item Keyword="lua_getlocal" Style="Keyword" />
+				<Item Keyword="lua_getmetatable" Style="Keyword" />
+				<Item Keyword="lua_getstack" Style="Keyword" />
+				<Item Keyword="lua_gettable" Style="Keyword" />
+				<Item Keyword="lua_gettop" Style="Keyword" />
+				<Item Keyword="lua_getupvalue" Style="Keyword" />
+				<Item Keyword="lua_Hook" Style="Keyword" />
+				<Item Keyword="lua_insert" Style="Keyword" />
+				<Item Keyword="lua_Integer" Style="Keyword" />
+				<Item Keyword="lua_isboolean" Style="Keyword" />
+				<Item Keyword="lua_iscfunction" Style="Keyword" />
+				<Item Keyword="lua_isfunction" Style="Keyword" />
+				<Item Keyword="lua_islightuserdata" Style="Keyword" />
+				<Item Keyword="lua_isnil" Style="Keyword" />
+				<Item Keyword="lua_isnone" Style="Keyword" />
+				<Item Keyword="lua_isnoneornil" Style="Keyword" />
+				<Item Keyword="lua_isnumber" Style="Keyword" />
+				<Item Keyword="lua_isstring" Style="Keyword" />
+				<Item Keyword="lua_istable" Style="Keyword" />
+				<Item Keyword="lua_isthread" Style="Keyword" />
+				<Item Keyword="lua_isuserdata" Style="Keyword" />
+				<Item Keyword="lua_lessthan" Style="Keyword" />
+				<Item Keyword="lua_load" Style="Keyword" />
+				<Item Keyword="lua_newstate" Style="Keyword" />
+				<Item Keyword="lua_newtable" Style="Keyword" />
+				<Item Keyword="lua_newthread" Style="Keyword" />
+				<Item Keyword="lua_newuserdata" Style="Keyword" />
+				<Item Keyword="lua_next" Style="Keyword" />
+				<Item Keyword="lua_Number" Style="Keyword" />
+				<Item Keyword="lua_objlen" Style="Keyword" />
+				<Item Keyword="lua_pcall" Style="Keyword" />
+				<Item Keyword="lua_pop" Style="Keyword" />
+				<Item Keyword="lua_pushboolean" Style="Keyword" />
+				<Item Keyword="lua_pushcclosure" Style="Keyword" />
+				<Item Keyword="lua_pushcfunction" Style="Keyword" />
+				<Item Keyword="lua_pushfstring" Style="Keyword" />
+				<Item Keyword="lua_pushinteger" Style="Keyword" />
+				<Item Keyword="lua_pushlightuserdata" Style="Keyword" />
+				<Item Keyword="lua_pushliteral" Style="Keyword" />
+				<Item Keyword="lua_pushlstring" Style="Keyword" />
+				<Item Keyword="lua_pushnil" Style="Keyword" />
+				<Item Keyword="lua_pushnumber" Style="Keyword" />
+				<Item Keyword="lua_pushstring" Style="Keyword" />
+				<Item Keyword="lua_pushthread" Style="Keyword" />
+				<Item Keyword="lua_pushvalue" Style="Keyword" />
+				<Item Keyword="lua_pushvfstring" Style="Keyword" />
+				<Item Keyword="lua_rawequal" Style="Keyword" />
+				<Item Keyword="lua_rawget" Style="Keyword" />
+				<Item Keyword="lua_rawgeti" Style="Keyword" />
+				<Item Keyword="lua_rawset" Style="Keyword" />
+				<Item Keyword="lua_rawseti" Style="Keyword" />
+				<Item Keyword="lua_Reader" Style="Keyword" />
+				<Item Keyword="lua_register" Style="Keyword" />
+				<Item Keyword="lua_remove" Style="Keyword" />
+				<Item Keyword="lua_replace" Style="Keyword" />
+				<Item Keyword="lua_resume" Style="Keyword" />
+				<Item Keyword="lua_setallocf" Style="Keyword" />
+				<Item Keyword="lua_setfenv" Style="Keyword" />
+				<Item Keyword="lua_setfield" Style="Keyword" />
+				<Item Keyword="lua_setglobal" Style="Keyword" />
+				<Item Keyword="lua_sethook" Style="Keyword" />
+				<Item Keyword="lua_setlocal" Style="Keyword" />
+				<Item Keyword="lua_setmetatable" Style="Keyword" />
+				<Item Keyword="lua_settable" Style="Keyword" />
+				<Item Keyword="lua_settop" Style="Keyword" />
+				<Item Keyword="lua_setupvalue" Style="Keyword" />
+				<Item Keyword="lua_State" Style="Keyword" />
+				<Item Keyword="lua_status" Style="Keyword" />
+				<Item Keyword="lua_toboolean" Style="Keyword" />
+				<Item Keyword="lua_tocfunction" Style="Keyword" />
+				<Item Keyword="lua_tointeger" Style="Keyword" />
+				<Item Keyword="lua_tolstring" Style="Keyword" />
+				<Item Keyword="lua_tonumber" Style="Keyword" />
+				<Item Keyword="lua_topointer" Style="Keyword" />
+				<Item Keyword="lua_tostring" Style="Keyword" />
+				<Item Keyword="lua_tothread" Style="Keyword" />
+				<Item Keyword="lua_touserdata" Style="Keyword" />
+				<Item Keyword="lua_type" Style="Keyword" />
+				<Item Keyword="lua_typename" Style="Keyword" />
+				<Item Keyword="lua_Writer" Style="Keyword" />
+				<Item Keyword="lua_xmove" Style="Keyword" />
+				<Item Keyword="lua_yield" Style="Keyword" />
+				<Item Keyword="math.abs" Style="Keyword" />
+				<Item Keyword="math.acos" Style="Keyword" />
+				<Item Keyword="math.asin" Style="Keyword" />
+				<Item Keyword="math.atan" Style="Keyword" />
+				<Item Keyword="math.atan2" Style="Keyword" />
+				<Item Keyword="math.ceil" Style="Keyword" />
+				<Item Keyword="math.cos" Style="Keyword" />
+				<Item Keyword="math.cosh" Style="Keyword" />
+				<Item Keyword="math.deg" Style="Keyword" />
+				<Item Keyword="math.exp" Style="Keyword" />
+				<Item Keyword="math.floor" Style="Keyword" />
+				<Item Keyword="math.fmod" Style="Keyword" />
+				<Item Keyword="math.frexp" Style="Keyword" />
+				<Item Keyword="math.huge" Style="Keyword" />
+				<Item Keyword="math.ldexp" Style="Keyword" />
+				<Item Keyword="math.log" Style="Keyword" />
+				<Item Keyword="math.log10" Style="Keyword" />
+				<Item Keyword="math.max" Style="Keyword" />
+				<Item Keyword="math.min" Style="Keyword" />
+				<Item Keyword="math.modf" Style="Keyword" />
+				<Item Keyword="math.pi" Style="Keyword" />
+				<Item Keyword="math.pow" Style="Keyword" />
+				<Item Keyword="math.rad" Style="Keyword" />
+				<Item Keyword="math.random" Style="Keyword" />
+				<Item Keyword="math.randomseed" Style="Keyword" />
+				<Item Keyword="math.sin" Style="Keyword" />
+				<Item Keyword="math.sinh" Style="Keyword" />
+				<Item Keyword="math.sqrt" Style="Keyword" />
+				<Item Keyword="math.tan" Style="Keyword" />
+				<Item Keyword="math.tanh" Style="Keyword" />
+				<Item Keyword="module" Style="Keyword" />
+				<Item Keyword="next" Style="Keyword" />
+				<Item Keyword="nil" Style="Control" />
+				<Item Keyword="not" Style="Control" />
+				<Item Keyword="or" Style="Control" />
+				<Item Keyword="os.clock" Style="Keyword" />
+				<Item Keyword="os.date" Style="Keyword" />
+				<Item Keyword="os.difftime" Style="Keyword" />
+				<Item Keyword="os.execute" Style="Keyword" />
+				<Item Keyword="os.exit" Style="Keyword" />
+				<Item Keyword="os.getenv" Style="Keyword" />
+				<Item Keyword="os.remove" Style="Keyword" />
+				<Item Keyword="os.rename" Style="Keyword" />
+				<Item Keyword="os.setlocale" Style="Keyword" />
+				<Item Keyword="os.time" Style="Keyword" />
+				<Item Keyword="os.tmpname" Style="Keyword" />
+				<Item Keyword="package.cpath" Style="Keyword" />
+				<Item Keyword="package.loaded" Style="Keyword" />
+				<Item Keyword="package.loaders" Style="Keyword" />
+				<Item Keyword="package.loadlib" Style="Keyword" />
+				<Item Keyword="package.path" Style="Keyword" />
+				<Item Keyword="package.preload" Style="Keyword" />
+				<Item Keyword="package.seeall" Style="Keyword" />
+				<Item Keyword="pairs" Style="Keyword" />
+				<Item Keyword="pcall" Style="Keyword" />
+				<Item Keyword="print" Style="Keyword" />
+				<Item Keyword="rawequal" Style="Keyword" />
+				<Item Keyword="rawget" Style="Keyword" />
+				<Item Keyword="rawset" Style="Keyword" />
+				<Item Keyword="repeat" Style="Control" />
+				<Item Keyword="require" Style="Keyword" />
+				<Item Keyword="return" Style="Control" />
+				<Item Keyword="select" Style="Keyword" />
+				<Item Keyword="setfenv" Style="Keyword" />
+				<Item Keyword="setmetatable" Style="Keyword" />
+				<Item Keyword="string.byte" Style="Keyword" />
+				<Item Keyword="string.char" Style="Keyword" />
+				<Item Keyword="string.dump" Style="Keyword" />
+				<Item Keyword="string.find" Style="Keyword" />
+				<Item Keyword="string.format" Style="Keyword" />
+				<Item Keyword="string.gmatch" Style="Keyword" />
+				<Item Keyword="string.gsub" Style="Keyword" />
+				<Item Keyword="string.len" Style="Keyword" />
+				<Item Keyword="string.lower" Style="Keyword" />
+				<Item Keyword="string.match" Style="Keyword" />
+				<Item Keyword="string.rep" Style="Keyword" />
+				<Item Keyword="string.reverse" Style="Keyword" />
+				<Item Keyword="string.sub" Style="Keyword" />
+				<Item Keyword="string.upper" Style="Keyword" />
+				<Item Keyword="table.concat" Style="Keyword" />
+				<Item Keyword="table.insert" Style="Keyword" />
+				<Item Keyword="table.maxn" Style="Keyword" />
+				<Item Keyword="table.remove" Style="Keyword" />
+				<Item Keyword="table.sort" Style="Keyword" />
+				<Item Keyword="then" Style="Control" />
+				<Item Keyword="tonumber" Style="Keyword" />
+				<Item Keyword="tostring" Style="Keyword" />
+				<Item Keyword="true" Style="Control" />
+				<Item Keyword="type" Style="Keyword" />
+				<Item Keyword="unpack" Style="Keyword" />
+				<Item Keyword="until" Style="Control" />
+				<Item Keyword="_VERSION" Style="Keyword" />
+				<Item Keyword="while" Style="Control" />
+				<Item Keyword="xpcall" Style="Keyword" />
+				<Item Keyword="{" Style="Operator" />
+				<Item Keyword="]" Style="Operator" />
+				<Item Keyword="}" Style="Operator" />
+				<Item Keyword="^" Style="Operator" />
+				<Item Keyword="~=" Style="Operator" />
+			</Keywords>
+		</Language>
+	</Languages>
+</SourceInsightConfiguration>
