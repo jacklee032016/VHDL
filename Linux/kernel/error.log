@@ -1,0 +1,99 @@
+qemu_fdt_check_phandle: Couldn't find phandle for /memory: <no error>Invalid MicroBlaze version number: (null)
+Ramdisk addr 0x00000000, 
+FDT at 0x80654290
+Linux version 4.14.0 (lzj@lzj-Ubuntu) (gcc version 6.2.0 (crosstool-NG 1.20.0)) #7 Wed Nov 21 02:33:34 EST 2018
+setup_cpuinfo: initialising
+setup_cpuinfo: No PVR support. Using static CPU info from FDT
+wt_msr_noirq
+setup_memory: max_mapnr: 0x20000
+setup_memory: min_low_pfn: 0x80000
+setup_memory: max_low_pfn: 0xa0000
+setup_memory: max_pfn: 0xa0000
+Zone ranges:
+  DMA      [mem 0x0000000080000000-0x000000009fffffff]
+  Normal   empty
+  HighMem  empty
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000080000000-0x000000009fffffff]
+Initmem setup node 0 [mem 0x0000000080000000-0x000000009fffffff]
+On node 0 totalpages: 131072
+free_area_init_node: node 0, pgdat c059ba88, node_mem_map c0800000
+  DMA zone: 1024 pages used for memmap
+  DMA zone: 0 pages reserved
+  DMA zone: 131072 pages, LIFO batch:31
+pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+pcpu-alloc: [0] 0 
+Built 1 zonelists, mobility grouping on.  Total pages: 130048
+Kernel command line: console=ttyUL0,115200 earlyprintk
+PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+Memory: 512740K/524288K available (4236K kernel code, 185K rwdata, 1248K rodata, 139K init, 584K bss, 11548K reserved, 0K cma-reserved, 0K highmem)
+Kernel virtual memory layout:
+  * 0xfffea000..0xfffff000  : fixmap
+  * 0xff800000..0xffc00000  : highmem PTEs
+  * 0xff800000..0xff800000  : early ioremap
+  * 0xf0000000..0xff800000  : vmalloc & ioremap
+NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+irq-xilinx: /amba_pl/interrupt-controller@41200000: num_irq=6, edge=0x22
+/amba_pl/timer@41c00000: irq=1
+clocksource: xilinx_clocksource: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+xilinx_timer_shutdown
+xilinx_timer_set_periodic
+sched_clock: 32 bits at 100MHz, resolution 10ns, wraps every 21474836475ns
+Console: colour dummy device 80x25
+Calibrating delay loop... 486.60 BogoMIPS (lpj=2433024)
+pid_max: default: 4096 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+devtmpfs: initialized
+random: get_random_u32 called from bucket_table_alloc+0x124/0x3b0 with crng_init=0
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+futex hash table entries: 16 (order: -4, 448 bytes)
+NET: Registered protocol family 16
+PCI: Probing PCI hardware
+vgaarb: loaded
+clocksource: Switched to clocksource xilinx_clocksource
+NET: Registered protocol family 2
+TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+TCP bind hash table entries: 4096 (order: 4, 81920 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+UDP hash table entries: 256 (order: 1, 12288 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 12288 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 32
+Skipping unavailable RESET gpio -2 (reset)
+workingset: timestamp_bits=30 max_order=17 bucket_order=0
+romfs: ROMFS MTD (C) 2007 Red Hat, Inc.
+random: fast init done
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+40600000.serial: ttyUL0 at MMIO 0x40600000 (irq = 6, base_baud = 0) is a uartlite
+console [ttyUL0] enabled
+Oops: kernel access of bad area, sig: 11
+CPU: 0 PID: 1 Comm: swapper Not tainted 4.14.0 #7
+task: df819c00 task.stack: df82e000
+ Registers dump: mode=9F82FC4C
+ r1=DF90F280, r2=00000000, r3=FFFFFFFA, r4=00000001
+ r5=00000000, r6=00000200, r7=00000001, r8=DF845C00
+ r9=DF82FBCC, r10=00000000, r11=00000003, r12=0000005A
+ r13=00000000, r14=DF90F300, r15=C029FF5C, r16=00000000
+ r17=C02965D4, r18=00000000, r19=DF85680C, r20=C04191A0
+ r21=00000000, r22=DF8BFBCC, r23=DFA1C10C, r24=DF856800
+ r25=DF845C00, r26=FFFFFFFA, r27=00000000, r28=FFFFFFFA
+ r29=00000000, r30=00000000, r31=DF819C00, rPC=C02965D4
+ msr=000043A2, ear=00000020, esr=00000012, fsr=DF90F300
+Kernel panic - not syncing: Attempted to kill init! exitcode=0x0000000b
+
+---[ end Kernel panic - not syncing: Attempted to kill init! exitcode=0x0000000b
+
+random: crng init done
