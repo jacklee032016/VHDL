@@ -3,6 +3,50 @@ ubuntu Usage
 Oct.20, 2018
 
 
+Samba shared file from ubuntu guest
+--------------------------------------
+Dec.28, 2018
+
+Installation:
+::
+
+   sudo apt install samba
+  
+   whereis samba
+
+Configuration:
+::
+
+	 /etc/samba/smb.conf: add following lines:
+  
+   [yoctoShare]
+   comment=Yocto Share
+   path=/home/lzj/yocto
+   read only = no
+   browsable = yes
+
+   [PetaLinux]
+   comment=PetaLinux
+   path=/opt
+   read only = no
+   browsable = yes
+
+samba account:
+::
+
+   sudo smbpasswd -a lzj
+
+samba service:
+::
+
+   sudo service smbd restart
+
+Tests:
+::
+
+	 smb://10.0.2.15/
+
+
 Ubuntu and Vivado
 ------------------------
 
