@@ -42,6 +42,7 @@ samba service:
    sudo service smbd restart
 
 Tests:
+In ``File Manager``, and ``Connect to Server..``, input following
 ::
 
 	 smb://10.0.2.15/
