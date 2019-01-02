@@ -1,6 +1,33 @@
 OpenEmbedded Usage
 #############################
 
+OpenEmbedded in 14.04.1-Ubuntu
+================================
+
+Preparation of host
+::
+
+  sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
+    build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
+    xz-utils debianutils iputils-ping libsdl1.2-dev xterm
+
+Restart the build process of OE after entering into the ``build`` directory
+::
+
+   export OEROOT=../   # this variable is build by ``oe-init-build-env``;
+   source ../scripts/oe-buildenv-internal 
+   ../bitbake/bin/bitbake core-image-minimal
+
+Run, script read configuration (machine, kernel, filesystem, type, etc) from *.conf file in that folder:
+::
+
+   runqemu tmp-glibc/deploy/images/qemuarm/zImage
+   
+Notes:
+* 24G size of folder after build core-image-minimal
+   
+
+
 Preparation
 ==========================
 Install and update softwares in Fedora

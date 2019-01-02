@@ -2,6 +2,30 @@ ubuntu Usage
 ####################################
 Oct.20, 2018
 
+Windows client to Samba server
+--------------------------------------
+Dev.29, 2019
+After configured and run Samba server, and disable firmware (sudo ufw disable/sudo ufw status);
+
+On ubuntu, connect Samba service, everything is OK
+
+On windows, using:
+::
+
+   net use k: \\lzj-ubuntu\works password /user:lzj
+   system error 53 has occurred. the network path was not found
+
+On ubuntu, use    
+::
+   
+   smbclient -L //192.168.168.8 -U lzj 
+   
+   alerts:
+   
+   NetBIOS over TCP disabled -- no workgroup available
+
+Then on Windows, start the service of 'TCP/IP NetBIOS Helper', then everything is OK
+
 
 Samba shared file from ubuntu guest
 --------------------------------------
@@ -31,7 +55,7 @@ Configuration:
    read only = no
    browsable = yes
 
-samba account:
+samba account: add user 'lzj'
 ::
 
    sudo smbpasswd -a lzj
@@ -45,9 +69,11 @@ Tests:
 In ``File Manager``, and ``Connect to Server..``, input following
 ::
 
-	 smb://10.0.2.15/
+	smb://10.0.2.15/
 
+	smbclient -L //192.168.168.8 -U lzj : with username 'lzj'
 
+	
 Ubuntu and Vivado
 ------------------------
 

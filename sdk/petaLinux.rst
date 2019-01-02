@@ -26,6 +26,10 @@ Create a project of microblaze
   INFO: New project successfully created in /media/sf_vivados/v/Linux/peta/first
 
 
+	/opt/mp/mmb$ petalinux-create -t project --template microblaze -n mmb
+	INFO: Create project: mmb
+	INFO: New project successfully created in /opt/mp/mmb/mmb
+
 Define HW description
 ------------------------
 
