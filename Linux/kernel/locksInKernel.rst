@@ -22,8 +22,10 @@ Problems:
 +++++++++++++++
 #. User context can be interrupted by softIRQ;
 #. SoftIRQ can be entered by another CPU;
+
 Resolution
 ++++++++++++++
+
 * spin_lock_bh(): disables softirqs on that CPU, then grabs the lock;
 * spin_unlock_bh():
 * User context and SoftIRQ both call these functions to enter critical zone;
@@ -45,8 +47,10 @@ Problems:
 +++++++++++++++++++
 #. SoftIRQ can be interrupted by ISR;
 #. Critical zone in ISR( or SoftIRQ) can be entered in another CPU;
+
 Resolution
 +++++++++++++++++++
+
 * spin_lock_irq(): disable interrupts on that cpu, then grab the lock;
 * spin_unlock_irq():
 * spin_lock_irqsave(): saves whether interrupts were on or off in a flags word, which is passed to spin_unlock_irqrestore(). 
@@ -54,7 +58,8 @@ Resolution
    * SoftIRQ/Tasklet call spin_lock_irq(); 
    * ISR call spin_lock();
 * Option-2:
-   * SoftIRQ/Tasklet and ISR all call spin_lock_irq_save();   
+   * SoftIRQ/Tasklet and ISR all call spin_lock_irq_save();
+
 2 Types of Locks
 ==================
 No matter how many CPUs the processor has, these 2 types of locks are not recursive:
