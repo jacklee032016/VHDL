@@ -68,8 +68,8 @@ Only can be locked one time, eg. run in one CPU only;
 
 spin_lock_t
 ----------------
-spin: busy to wait, can't be re-scheduled;
-Support only when CONFIG_SMP or CONFIG_PROEMPT is enabled
+* spin: busy to wait, can't be re-scheduled;
+* Support only when CONFIG_SMP or CONFIG_PROEMPT is enabled
 
 mutex
 ----------------
@@ -89,3 +89,46 @@ Executable context in kernel
 #. tasklet: only running in one CPU, eg. only one instance can be running in OS
 #. timer: one kind of tasklet(not softIRQ);
 #. process/thread:
+
+
+Code
+==============================
+
+::
+
+	/*
+	 * These are the generic versions of the spinlocks and read-write
+	 * locks..
+	 */
+	#define spin_lock_irqsave(lock, flags)		do { local_irq_save(flags);       spin_lock(lock); } while (0)
+	#define spin_lock_irq(lock)			do { local_irq_disable();         spin_lock(lock); } while (0)
+	#define spin_lock_bh(lock)			do { local_bh_disable();          spin_lock(lock); } while (0)
+	
+	#define read_lock_irqsave(lock, flags)		do { local_irq_save(flags);       read_lock(lock); } while (0)
+	#define read_lock_irq(lock)			do { local_irq_disable();         read_lock(lock); } while (0)
+	#define read_lock_bh(lock)			do { local_bh_disable();          read_lock(lock); } while (0)
+	
+	#define write_lock_irqsave(lock, flags)		do { local_irq_save(flags);      write_lock(lock); } while (0)
+	#define write_lock_irq(lock)			do { local_irq_disable();        write_lock(lock); } while (0)
+	#define write_lock_bh(lock)			do { local_bh_disable();         write_lock(lock); } while (0)
+	
+	#define spin_unlock_irqrestore(lock, flags)	do { spin_unlock(lock);  local_irq_restore(flags); } while (0)
+	#define spin_unlock_irq(lock)			do { spin_unlock(lock);  local_irq_enable();       } while (0)
+	#define spin_unlock_bh(lock)			do { spin_unlock(lock);  local_bh_enable();        } while (0)
+	
+	#define read_unlock_irqrestore(lock, flags)	do { read_unlock(lock);  local_irq_restore(flags); } while (0)
+	#define read_unlock_irq(lock)			do { read_unlock(lock);  local_irq_enable();       } while (0)
+	#define read_unlock_bh(lock)			do { read_unlock(lock);  local_bh_enable();        } while (0)
+	
+	#define write_unlock_irqrestore(lock, flags)	do { write_unlock(lock); local_irq_restore(flags); } while (0)
+	#define write_unlock_irq(lock)			do { write_unlock(lock); local_irq_enable();       } while (0)
+	#define write_unlock_bh(lock)			do { write_unlock(lock); local_bh_enable();        } while (0)
+	#define spin_trylock_bh(lock)			({ int __r; local_bh_disable();\
+							__r = spin_trylock(lock);      \
+							if (!__r) local_bh_enable();   \
+							__r; })
+
+	
+* When lock (spinlock or mutex) is locked, only one task can run the critical code, no matter how many CPUs are in the process;
+* But IRQ and BH can run to interrupt the code in critical zone;
+
