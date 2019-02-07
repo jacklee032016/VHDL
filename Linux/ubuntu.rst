@@ -2,6 +2,13 @@ ubuntu Usage
 ####################################
 Oct.20, 2018
 
+add awk
+::
+
+    apt-get install gawk
+	ln -s /usr/bin/awk /bin/awk : symbol link to /bin/awk to support Makefile of rtosLwip
+
+
 Windows client to Samba server
 --------------------------------------
 Dev.29, 2019
@@ -13,6 +20,7 @@ On windows, using:
 ::
 
    net use k: \\lzj-ubuntu\works password /user:lzj
+   net use k: \\lzj-ubuntu\works password /user:workgroup\lzj   : when Windows host is belong to domain
    system error 53 has occurred. the network path was not found
 
 On ubuntu, use    
