@@ -2,6 +2,80 @@ ubuntu Usage
 ####################################
 Oct.20, 2018
 
+02,21, 2019
+--------------------
+
+   sudo apt-get install -y genext2fs
+   
+   
+tftp server
+-------------
+Install following packages.
+
+    sudo apt-get install xinetd tftpd tftp
+
+    Create /etc/xinetd.d/tftp and put this entry
+
+	service tftp
+	{
+		protocol        = udp
+		port            = 69
+		socket_type     = dgram
+		wait            = yes
+		user            = nobody
+		server          = /usr/sbin/in.tftpd
+		server_args     = /tftpboot
+		disable         = no
+	}
+
+    Create a folder /tftpboot this should match whatever you gave in server_args. mostly it will be tftpboot
+
+    sudo mkdir /tftpboot
+    sudo chmod -R 777 /tftpboot
+    sudo chown -R nobody /tftpboot
+
+Restart the xinetd service.
+
+    sudo service xinetd restart
+
+
+Testing our tftp server
+
+
+    tftp 192.168.1.2
+    tftp> get test
+    Sent 159 bytes in 0.0 seconds
+
+    tftp> quit
+
+
+
+python3 and virtualenv
+-------------------------------------
+::
+
+   python3 --version
+
+   sudo apt-get install -y python3-pip
+   
+   # sudo apt-get install -y python3-venv
+   
+   sudo pip3 install virtualenv
+
+Install and start virtual environment:
+::
+
+   Enter the directory for virtual environment;
+   
+   virtualenv .
+
+   source bin/activate
+
+   pip --version: check python version of virtual environment
+
+   pip install -r requirements:  pip freeze > requirements
+   
+
 add awk
 ::
 
@@ -11,7 +85,7 @@ add awk
 
 Windows client to Samba server
 --------------------------------------
-Dev.29, 2019
+Dec.29, 2019
 After configured and run Samba server, and disable firmware (sudo ufw disable/sudo ufw status);
 
 On ubuntu, connect Samba service, everything is OK

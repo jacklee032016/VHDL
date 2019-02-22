@@ -36,7 +36,7 @@ Command line
 It calls following 2 scripts:
 ::
    
-   oe-buildenv-internal: build environment for yocto project
+   oe-buildenv-internal: build environment for yocto project, such as BUILDDIR, BBPATH, BBBAKEDIR
    
    oe-setup-builddir: create BUILD directory, and create conf/local.conf and conf/bblayers.conf
 

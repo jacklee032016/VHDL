@@ -31,4 +31,18 @@ MACHINE: layer/conf/machine
 
 DISTRO: layer/conf/distro
 
-   
+layers:
+
+* distro: policies, top level layer
+* sw: 
+* machine: yocto-bsp
+
+
+* image-mklibs: reduce shared lib;
+* image-prelink: prelink fs image;
+
+
+* layer: 
+* Recipe: one package;
+* classes: shared and used by recipes;
+
