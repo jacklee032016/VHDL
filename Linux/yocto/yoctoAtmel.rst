@@ -2,6 +2,21 @@ Read me for OpenEmbedded
 ################################
 Fev. Sept, 2019
 
+
+SDK and Toolchain
+============================
+03.11, 2019
+
+::
+
+   export OEROOT=../
+   source ../scripts/oe-buildenv-internal
+
+   ../bitbake/bin/bitbake core-image-base -c populate_sdk
+
+
+
+
 Build
 ============================
 

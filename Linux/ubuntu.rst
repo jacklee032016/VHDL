@@ -2,7 +2,48 @@ ubuntu Usage
 ####################################
 Oct.20, 2018
 
-02,21, 2019
+tftp server with write priviledge:
+--------------------
+03.20, 2019
+
+Install files:
+
+::
+
+   sudo apt install -y tftpd-hpa
+
+Configuration file: /etc/default/tftpd-hpa
+
+::
+
+   # /etc/default/tftpd-hpa
+
+   TFTP_USERNAME="lzj"
+   TFTP_DIRECTORY="/home/lzj/yocto/tftpSvr"
+   TFTP_ADDRESS=":69"
+   TFTP_OPTIONS="--secure --create"
+
+Notes: '--create' must be added to create new file in server;
+
+Start service
+
+::
+
+   service tftpd-hpa status
+   service tftpd-hpa stop
+   service tftpd-hpa start
+   service tftpd-hpa restart
+   service tftpd-hpa force-reload
+
+Client command line:
+
+::
+
+   tftp -l /etc/apache2/httpd.conf -r httpd.conf -p 192.168.168.101
+
+
+
+02.21, 2019
 --------------------
 
    sudo apt-get install -y genext2fs
